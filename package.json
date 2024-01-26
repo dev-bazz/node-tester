@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-and-start": "cd app_1 && vite build  && cd ../app_2 && vite build --base /app2/ && cd .. && node server.js"
+    "build-and-start": "cd app_1 && vite build  && cd ../app_2 && vite build --base /app2/ && cd .. && node server.js",
+    "install-app-dependencies": "cd app_1 && npm install && cd ../app_2 && npm install"
   },
   "keywords": [],
   "author": "",
