@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-and-start": "cd app_1 && vite build  && cd ../app_2 && vite build --base /app2/ && cd .. && node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "vite": "^5.0.12"
   }
 }
