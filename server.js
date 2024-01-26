@@ -5,7 +5,7 @@ const app = express();
 const port = 1025;
 
 app.use(
-	"/app1",
+	"/",
 	express.static(path.join(__dirname, "app_1/dist")),
 );
 app.use(
